@@ -217,7 +217,7 @@ EOF
     store it locally: `./setkubeconfig`
 12. Forward the cluster port locally since it's not exposed to the Internet by
     default. Do this every time you want to interact with the cluster:
-    `./ssh-node gateway`
+    `./ssh-node gateway -fN`
 13. Test cluster access from your local machine: `kubectl get nodes`
 
 Enjoy your new cluster! 🚀
