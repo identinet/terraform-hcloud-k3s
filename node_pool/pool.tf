@@ -222,7 +222,7 @@ variable "node_type" {
   description = "Node type (size)."
   type        = string
   validation {
-    condition     = can(regex("^(cp?x[1-5]1|cax[1-4]1|ccx[1-6]3)$", var.node_type))
+    condition     = can(regex("^(cp?x[1-5][1-2]|cax[1-4]1|ccx[1-6]3)$", var.node_type))
     error_message = "Node type is not valid."
   }
 }

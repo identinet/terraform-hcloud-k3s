@@ -264,7 +264,7 @@ variable "gateway_server_type" {
   type        = string
   default     = "cx11"
   validation {
-    condition     = can(regex("^(cp?x[1-5]1|cax[1-4]1|ccx[1-6]3)$", var.gateway_server_type))
+    condition     = can(regex("^(cp?x[1-5][1-2]|cax[1-4]1|ccx[1-6]3)$", var.gateway_server_type))
     error_message = "Node type is not valid."
   }
 }
